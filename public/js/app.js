@@ -27,6 +27,6 @@ weatherForm.addEventListener("submit",(e)=>{
     e.preventDefault()
     messageNormal.textContent = "Loading......."
     messageError.textContent = ""
-    const url = "http://localhost:3000/weather?address="+textValue.value
+    const url = "/weather?address="+textValue.value
     getWeatheInfo(url)
 })
